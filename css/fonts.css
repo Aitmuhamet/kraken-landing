@@ -1,0 +1,42 @@
+/* Montserrat */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Black.ttf') format('truetype');
+    font-weight: 900;
+}
+@font-face {
+    font-family: 'Tactic Sans Extra Extended';
+    src: url('../fonts/Tactic-Sans-Extra-Extended-Ultra.ttf') format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Rotonda';
+    src: url('../fonts/Rotonda-Regular.ttf') format('truetype');
+    font-weight: 900;
+}
+/* icons */
+@font-face {
+    font-family: 'icons';
+    src: url('../fonts/icons/fa-brands-400.ttf') format('truetype');
+    font-weight: 400;
+}
