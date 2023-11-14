@@ -208,7 +208,7 @@ body{
 
     border-radius: 20px;
     background: #FFCB12;
-    box-shadow: 10px 9px 4px 0px rgba(0, 0, 0, 0.25), 5px 4px 6px 6px rgba(237, 255, 167, 0.25) inset;
+    box-shadow: 10px 9px 4px 0px rgba(0, 0, 0, 0.25), 5px 4px 6px 6px rgba(237, 255, 167, 0.25);
 }
 .site-header__btn a:hover {
     color: #272727;
@@ -589,7 +589,12 @@ body{
         height: 65px;
         
         margin: 100px auto 0;
+        border-radius: 10px;
     }
+    .site-header__btn a:hover {
+        border-radius: 10px;
+    }
+    
     .site-footer__text {
         font-size: 1.5vw;
         line-height: 1.5vw;
@@ -707,6 +712,9 @@ body{
         
         width: 320px;
         height: 110px;
+    }
+    .site-header__btn a:hover {
+        box-shadow: 10px 9px 4px 0px rgba(0, 0, 0, 0.25), 5px 4px 6px 6px rgba(237, 255, 167, 0.25) inset;
     }
     .site-header__img img {
         right: -300px;
