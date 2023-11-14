@@ -9,16 +9,44 @@
     --body-bg: rgba(30, 30, 30, 1);
     --wrapper-width: 1199.9px;
 }
-
+.site-header,
+.site-footer,
+.wrapp {
+        overflow: hidden;
+}
+.wrapp {
+    position: relative;
+}
+.site-header {
+    padding-bottom: 550px;
+}
+.bg-img-1,
+.bg-img-2,
+.bg-img-3 {
+    position: absolute;
+}
+.bg-img-1 {
+    top: 24%;
+    right: -26%;
+}
+.bg-img-2 {
+    top: -28%;
+    left: -8%;
+}
+.bg-img-2 img {
+    max-width: 1210px;
+}
 body{
     color: white;
 
     background: /* url('../img/header-img-2.png') no-repeat,
-    url('../img/header-img-3.png') no-repeat, 
-    url('../img/header-img-4.png') no-repeat, */
+    url('../img/header-img-3.png') no-repeat, */
+    url('../img/octopus-4.png') no-repeat  left bottom,
     var(--body-bg);
     position: relative;
 }
+
+
 .wrapper {
     width: var(--wrapper-width, 1170px);
     margin-left: auto;
@@ -27,9 +55,18 @@ body{
     padding-right: 16px;
     /* border: 1px solid red; */
 }
+.site-header__content img {
+    position: absolute;
+    display: block;
+    width: 920px;
+    right: -820px;
+    bottom: -750px;
+
+}
 .site-header__content {
     /* border: 2px dashed green; */
     display: flex;
+    position: relative;
     /* flex-direction: column; */
 }
 .site-header__content h1,
@@ -104,7 +141,10 @@ body{
 }
 .site-header__btn {
     /* border: 1px solid pink; */
+    display: flex;
+    position: relative;
 }
+
 .site-header__btn a {
     color: #272727;
     text-align: center;
@@ -140,7 +180,6 @@ body{
     color: #000;
     text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.25);
 }
-
 /* site-main */
 .site-main__title {
     display: flex;
@@ -161,7 +200,7 @@ body{
     letter-spacing: 2.05px;
     text-transform: uppercase;
 
-    margin-top: 267px;
+    margin-top: -210px;
     margin-bottom: 175px;
 }
 .site-main__icon {
@@ -337,6 +376,13 @@ body{
 /* Adapting the site to different screens */
 
 @media (max-width: 1599.9px) {
+    .bg-img-2 {
+        top: -28%;
+        left: -18%;
+    }
+    .bg-img-1 {
+        right: -37%;
+    }
     .site-header__btn a {
         font-size: 33px;
         width: 428px;
@@ -374,6 +420,17 @@ body{
     }
 }
 @media (max-width: 1399.9px) {
+    .bg-img-2 {
+        top: -24%;
+        left: -15%;
+    }
+    .bg-img-2 img {
+        max-width: 1010px;
+    }
+    .bg-img-1 {
+        right: -42%;
+        top: 25%;
+    }
     .site-header__content h1,
     .site-header__letter {
         font-size: 45px;
@@ -435,6 +492,17 @@ body{
     }
 }
 @media (max-width: 1199.9px) {
+    .bg-img-2 {
+        top: -23%;
+        left: -20%;
+    }
+    .bg-img-2 img {
+        max-width: 910px;
+    }
+    .bg-img-1 {
+        right: -54%;
+        top: 25%;
+    }
     .site-header__content h1,
     .site-header__letter {
         font-size: 38px;
@@ -497,6 +565,31 @@ body{
     }
 }
 @media (max-width: 991.9px) {
+    .bg-img-2 {
+        top: -15%;
+        left: -43%;
+    }
+    .bg-img-2 img {
+        max-width: 810px;
+    }
+    .site-header {
+        padding-bottom: 0;
+    }
+    .bg-img-1 {
+        right: -273px;
+        top: -255px;
+    }
+    .bg-img-1 img {
+        width: 500px;
+    }
+    .site-header,
+    .site-main,
+    .site-footer {
+        overflow: hidden;
+    }
+    .site-header__content {
+        padding-bottom: 800px;
+    }
     .site-header__content h1,
     .site-header__letter {
         font-size: 23px;
@@ -554,10 +647,10 @@ body{
         display: none;
     }
     .site-main__title {
-        margin-top: 820px;
+        margin-top: 0px;
     }
     .site-main__list {
-        gap: 90px;
+        gap: 60px;
     }
     .site-main__list li {
         flex-direction: row;
@@ -578,17 +671,25 @@ body{
     .site-footer__content div:nth-child(3) {
         order: 2;
     }
-    .site-footer__reward p {
-        padding: 7% 10%;
+    .site-footer__reward {
+        padding: 3% 5%;
     }
     .site-footer__reward p {
+        padding: 7% 5%;
         font-size: 2vw;
     }
     .site-footer__reward img {
-        top: 15%;
+        top: 18%;
+    }
+    .site-footer__list a {
+        font-size: 2.5vw;
+        /* height: auto; */
     }
 }
 @media (max-width: 767.9px) {
+    .site-header__content {
+        padding-bottom: 530px;
+    }
     .site-header__content h1 {
         margin-top: 130px;
         font-size: 5.5vw;
@@ -625,7 +726,7 @@ body{
         width: 500px;
         font-size: 30px;
 
-        margin-top: 600px;
+        /* margin-top: 600px; */
         margin-bottom: 100px;
     }
     .site-main__list {
@@ -636,19 +737,46 @@ body{
     }
     .site-main__list-text {
         font-size: 27px;
-
+        
+    }
+    .site-footer__list a {
+        height: auto;
+        line-height: 3vw;
+        border-radius: 13px;
     }
     .site-main__promo {
         font-size: 3.5vw;
         width: auto;
         padding: 0 20px;
     }
+    .site-footer__reward {
+        padding: 3% 7%;
+    }
+    .site-footer__reward p {
+        padding: 7% 2%;
+    }
     .site-footer__reward img {
-        top: 12%;
+        top: 14%;
         right: 8%;
     }  
+    .site-footer__text {
+        font-size: 2.5vw;
+    }
 }
 @media (max-width: 575.9px) {
+    .site-header__content h1 {
+        padding-left: 3%;
+    }
+    .site-header__content {
+        padding-bottom: 400px;
+    }
+    .bg-img-2 {
+        right: -230px;
+        top: -210px;
+    }
+    .bg-img-1 img {
+        width: 400px;
+    }
     .site-header__content h1 {
         font-size: 7.5vw;
     }
@@ -732,9 +860,27 @@ body{
         padding: 15px;
         margin-top: 60px;
     }
+    .site-footer__content div {
+        padding: 0;
+    }
+    .site-footer__reward p {
+        padding: 9%;
+    }
     .site-footer__reward img {
         top: 18%;
-        right: 5%;
+        right: 10%;
+    }
+    .site-footer__list a {
+        height: auto;
+        line-height: 15px;
+        font-size: 1.8vw;
+        padding: 2% 8%;
+    }
+    .body {
+        background: /* url('../img/header-img-2.png') no-repeat,
+        url('../img/header-img-3.png') no-repeat, */
+        url('../img/octopus-4.png') no-repeat  left 0% bottom 11%/ 71% 16%,
+        var(--body-bg);
     }
 }
 
