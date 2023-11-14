@@ -712,9 +712,13 @@ body{
         
         width: 320px;
         height: 110px;
+        border-radius: 10px;
+        box-shadow: 10px 9px 4px 0px rgba(0, 0, 0, 0.25), 5px 4px 6px 6px rgba(237, 255, 167, 0.25) inset;
     }
     .site-header__btn a:hover {
-        box-shadow: 10px 9px 4px 0px rgba(0, 0, 0, 0.25), 5px 4px 6px 6px rgba(237, 255, 167, 0.25) inset;
+        border-radius: 10px;
+        background: #F3BE00;
+        box-shadow: 10px 9px 10px 0px rgba(0, 0, 0, 0.25) inset;
     }
     .site-header__img img {
         right: -300px;
