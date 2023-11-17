@@ -208,7 +208,7 @@ body{
 
     border-radius: 20px;
     background: #FFCB12;
-    box-shadow: 10px 9px 4px 0px rgb(0 0 0 / 25%), 5px 4px 6px 6px rgb(237 255 167 / 25%) inset;
+    box-shadow: 10px 9px 4px 0px rgb(0 0 0 / 25%), 5px 4px 30px 6px rgba(198, 245, 8, 0.822) inset;
     
 }
 .site-header__btn a:hover {
