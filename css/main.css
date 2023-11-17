@@ -726,7 +726,7 @@ body{
         width: 320px;
         height: 110px;
         border-radius: 10px;
-        box-shadow: 10px 9px 4px 0px rgb(0 0 0 / 25%), 5px 4px 6px 6px rgba(212, 233, 128, 0.601) inset;
+        box-shadow: 10px 9px 4px 0px rgb(0 0 0 / 25%), 5px 4px 30px 6px rgba(198, 245, 8, 0.822) inset;
     }
     .site-header__btn a:hover {
         border-radius: 10px;
